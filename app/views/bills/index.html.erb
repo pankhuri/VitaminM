@@ -1,0 +1,9 @@
+<div id="bills"></div>
+<script type="text/javascript">
+  $(function() {
+    // vitaminM is the app name
+    window.router = new VitaminM.Routers.BillsRouter({bill_types: <%= @bills.to_json.html_safe -%>});
+    Backbone.history.start();
+  });
+</script>
+

@@ -1,0 +1,2 @@
+class MobileBill < Bill
+end
